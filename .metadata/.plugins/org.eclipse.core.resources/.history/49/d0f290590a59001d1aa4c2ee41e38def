@@ -1,0 +1,26 @@
+package collection;
+import java.util.*;
+import java.util.Stack;
+
+ class StackDemo {
+public static void main(String[] args) {
+//	Stack<Integer> s=new Stack <Integer>();
+//	s.push(10);
+//	s.push(15);
+//	s.push(20);
+//	s.push(25);
+//	
+//	System.out.println("Intial Stack: " + s);
+//	System.out.println("popped element: "+s.pop());
+//	//System.out.println("peek element:" +s.peek());
+//	//System.out.println("popped element:" +s.pop());
+//	System.out.println("after pop operation" +s);
+Deque<Character> s=new ArrayDeque<Character>();
+s.push('A');
+s.push('B');
+s.push('c');
+System.out.println(s.peek());
+System.out.println(s.pop());
+System.out.println("After doing operations" + s);
+}
+}

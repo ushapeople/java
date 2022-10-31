@@ -1,0 +1,39 @@
+package atm;
+import java.io.IOException;
+
+
+public class Optionalmenu extends Account{
+Scanner menuInput=new Scanner(System.in);
+DecimalFormat moneyFormate=new DecimalFormat("`$`###,##0.00");
+ HashMap<Integer,Integer> data=new HashMap<Integer,Integer>();
+  
+ public void getLogin() throws IOException{
+	 int x=1;
+	 do {
+		 try {
+			 data.put(988656, 9886);
+			 data.put(935301, 9353);
+			 System.out.println("Well Come to ATM");
+			 System.out.println("Enter your Customer Number:");
+			 setCustomerNumber(menuInput.nextInt());
+			 
+			 System.out.println("enetr your pin number:");
+			 setPinNumber(menuInput.nextInt());
+	  }catch (Exception e) {
+		  System.out.println("\n" + "Invalid character(s).only numbers" + "\n");
+		  x=2;
+	  }
+		 for(Entry<Integer, Integer> entry : data.entrySet()) {
+			 if(entry.getKey()==getCustomerNumber() && entry.getValue()==getPinNumber())
+		getAccountType();
+		 }
+		 
+	 System.out.println("\n" + "Wrong customernumberor pinnumber" + "\n");
+ }
+while(x==1);
+ }
+ //}
+public void getAccountType() {
+	
+}
+}

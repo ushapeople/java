@@ -1,0 +1,5 @@
+package collection;
+
+public class UshaDemo {
+Usha<Integer> u= new Usha<Integer>();
+}

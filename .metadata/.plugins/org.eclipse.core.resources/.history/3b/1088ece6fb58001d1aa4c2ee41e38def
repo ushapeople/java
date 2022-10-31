@@ -1,0 +1,15 @@
+package collection;
+
+import java.util.ArrayList;
+
+public class AddString {
+public static void main(String[] args) {
+	ArrayList<String> al=new ArrayList<>();
+	
+	al.add("usha");
+	al.add("usha");
+	//adding name in 1st index
+	al.add(1,"Ashok");
+	System.out.println(al);
+}
+}

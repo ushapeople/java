@@ -1,0 +1,9 @@
+package finalassegnment;
+
+public class Main2 {
+	String String1="SHORE";
+	String String2="HORSE";
+public static void main(String[] args) {
+	
+}
+}

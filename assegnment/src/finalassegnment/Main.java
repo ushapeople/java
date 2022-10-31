@@ -1,0 +1,15 @@
+package finalassegnment;
+
+public  class Main{
+	public static void main(String[] args) {
+		String String1 ="NOTE";
+		String String2="KNOT";
+		if(String1.equals(String2)) {
+			System.out.println("string1 and string2 are Anagrams");
+		}
+		else {
+			System.out.println("string are not Anagrams");
+		}
+	}
+}
+

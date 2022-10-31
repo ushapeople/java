@@ -1,0 +1,17 @@
+package atm;
+import java.text.DecimalFormat;
+
+public class Account {
+	Scanner input=new Scanner(System.in);
+	DecimalFormat moneyFormayt=new 	DecimalFormat("`$`###,##0.00");
+//	private int customerNumber;
+	
+public int setCustomerNumber(int customerNumber) {
+	this.customerNumber=customerNumber;
+	return customerNumber;
+}
+public int getCustomerNumber() {
+	return customerNumber;
+}
+	
+}

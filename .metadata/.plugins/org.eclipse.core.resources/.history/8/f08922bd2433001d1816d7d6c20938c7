@@ -1,0 +1,70 @@
+package Practiceprog;
+import java.util.Scanner;
+public class Hotelreservation {
+	public void meth1() {
+		
+      Scanner sc=new Scanner(System.in);
+   
+      System.out.println("enter location");
+      System.out.println("1.Delhi\n2.bangalore");
+      int a=sc.nextInt();
+      if(a==1)
+      {
+    	  System.out.println("well come to delhi");
+    	  System.out.println("select the hotel");
+    	  System.out.println("1.taj palace\n2.leela palace");
+    	  int c=sc.nextInt();
+    	  
+    	  System.out.println("well come to Bangalore");
+      System.out.println("select hotelname");
+      System.out.println("1.taj hotel\n2.lilac hotel");
+      int d=sc.nextInt();
+      
+	}}
+	public static void view() {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("select the view");
+		System.out.println("1.mountain\n2.pool");
+		int e=sc.nextInt();
+		if(e==1) {
+			System.out.println("you are mountaine view");
+			System.out.println("number of persons");
+			int p=sc.nextInt();
+			if(p>0&&p<=4) {
+				System.out.println(" press  to enter your booking room");
+				char f=sc.next().charAt(0);
+				if(f==1) {
+					System.out.println("your room is booked");
+					
+				}
+				else {
+					System.out.println("room is canceled");
+				}
+			}
+		}
+	}
+	public static void roomtype() {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("select Ac/NonAc");
+		System.out.println("1.Ac\n2.NonAc");
+		int ac=sc.nextInt();
+		if(ac==1) {
+			System.out.println("you are booking Ac room");
+			System.out.println(" Ac room price:5000");
+		}
+		else if(ac==2) {
+			System.out.println("you are booking NonAc room");
+			System.out.println(" Ac room price:3600");
+
+			
+		}
+		
+	}
+
+public static void main(String args[])
+{
+	 Hotelreservation bj=new Hotelreservation();
+	 bj.meth1();
+	 bj.view();
+	 bj.roomtype(); 
+}}

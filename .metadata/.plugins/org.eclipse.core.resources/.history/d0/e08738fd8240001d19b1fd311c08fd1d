@@ -1,0 +1,16 @@
+package p2;
+
+import java.util.ArrayList;
+
+public interface EmployeeDao 
+{
+	public void Display(Employee employee);
+	public void AddEmployee(Employee employee);
+	
+	public void UpdateEmployee(String q);
+	public void DeleteEmployee(Employee employee);
+	ArrayList<Employee> Display();
+	
+	
+
+}

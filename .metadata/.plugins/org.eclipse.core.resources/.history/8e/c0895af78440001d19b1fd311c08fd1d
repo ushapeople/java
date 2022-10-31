@@ -1,0 +1,75 @@
+package p2;
+
+import java.sql.Statement;
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.util.ArrayList;
+
+import p1.Connectionfactory;
+
+public class EmployeeService implements EmployeeDao {
+
+	
+
+	@Override
+	public void AddEmployee(Employee employee)
+	{
+		try
+        {
+			
+            Connection con = Connectionfactory.getConnection();
+
+			 Statement stmt= con.createStatement();
+             stmt.executeUpdate("insert into employee1(`name`,`password`) values('"+employee.getUsername()+"','"+employee.getPassword()+"')");
+        }
+        catch(Exception e)
+        {
+            System.out.println(e);
+        }
+	}
+	
+   
+
+	@Override
+	public void DeleteEmployee(Employee employee) {
+		try
+		{
+			Connection con = Connectionfactory.getConnection();
+			Statement stmt= con.createStatement();
+			 stmt.executeUpdate("delete from  employee1 where  name='"+employee.getUsername()+"' ");
+
+			
+		}
+		catch (Exception e){
+			
+			System.out.println(e);
+		}
+	}
+
+	@Override
+	public void Display(Employee employee) {
+		try
+        {
+            Connection con = Connectionfactory.getConnection();
+            Statement statement = con.createStatement();
+            ResultSet rs = statement.executeQuery("select * from employee1");
+            while(rs.next())
+            {
+                System.out.println(rs.getString(1)+"\t"+rs.getString(2));
+            }
+        }
+        catch (Exception e)
+		{
+            System.out.println(e);
+		}
+		
+		}
+
+
+
+	@Override
+	public void UpdateEmployee() {
+		// TODO Auto-generated method stub
+		
+	}
+}

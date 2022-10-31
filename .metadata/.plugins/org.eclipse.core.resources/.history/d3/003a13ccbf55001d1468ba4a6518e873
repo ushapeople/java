@@ -1,0 +1,14 @@
+package finalassegnment;
+
+public class Main2 {
+	static String String1="SHORE";
+	static String String2="HORSE";
+public static void main(String[] args) {
+	if(String1==String2) {
+		System.out.println("are anagrams");
+	}
+	else {
+		System.out.println("not a Anagrams");
+	}
+}
+}

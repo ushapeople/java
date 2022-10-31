@@ -1,0 +1,101 @@
+package p2;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Provider {
+static Scanner sc = new Scanner(System.in);
+public static void operations()
+{
+    System.out.println("Enter \n1.Insert\n2.Display\n3.Delete\n4.Update");
+    int n = sc.nextInt();
+    if(n==1)
+    {
+    System.out.println("Provide the details to add in data base");
+    Provider.addData();
+    }
+    else if(n==2)
+    {
+    System.out.println("Your Data in Database is : ");
+    Provider.Display();
+    }
+    else if(n==3)
+    {
+        deleteData();
+        System.out.println("Data deleted");
+    }
+    else if(n==4)
+    {
+        
+        System.out.println("");
+    }
+    else
+    {
+        System.out.println("Invalid selection\nSelect again");
+        operations();
+    }
+}
+
+	private static void deleteData() {
+	// TODO Auto-generated method stub
+	
+}
+
+	private static void Display() {
+	// TODO Auto-generated method stub
+	
+}
+
+	public static void addData() 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter your name");
+		String un=sc.next();
+		System.out.println("enter your password");
+		String password=sc.next();
+		System.out.println("data inserted");
+		Employee employee=new Employee();
+		employee.setUsername(un);
+		employee.setPassword(password);
+		EmployeeService service=new EmployeeService();
+		service.AddEmployee(employee);
+		
+	}
+	public static void displaydata()
+     {
+		System.out.println("===Displaying the data===");
+		Employee employee=new Employee();
+		
+		EmployeeService service=new EmployeeService();
+		service.Display(employee);
+	}
+	
+	public static void deletedata()
+	{
+		Scanner sc=new Scanner(System.in);
+		
+		System.out.println("====for deleting the data====");
+		System.out.println("enetr the name");
+		String un=sc.next();
+		System.out.println("data deleted");
+		Employee employee=new Employee();
+		
+		employee.setUsername(un);
+		EmployeeService service=new EmployeeService();
+		service.DeleteEmployee(employee);
+		
+    }
+	public static void Update()
+	{
+		
+	}
+	public static void main(String[] args) {
+		 Provider.addData();
+			Provider.deletedata();
+			Provider.displaydata();
+	}
+	
+	
+	
+}
+

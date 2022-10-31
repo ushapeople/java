@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="reg.jsp"method="post">
+Name <input type="text" name="un"><br>
+Password <input type="password" name="pw"><br>
+Add <input type="text" name="add"><br>
+Zip <input type="text" name="zip"><br>
+
+
+<input type="submit" Values="Register">
+</form>
+
+
+
+</body>
+
+</html>

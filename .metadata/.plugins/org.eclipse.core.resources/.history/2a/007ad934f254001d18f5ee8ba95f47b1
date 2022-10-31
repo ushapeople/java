@@ -1,0 +1,22 @@
+package atm;
+import java.io.IOException;
+import java.util.HashMap;
+
+public class Optionalmenu extends Account
+{
+Scanner menuInput=new Scanner(System.in);
+DecimalFormat moneyFormate=new DecimalFormat("`$`###,##0.00");
+ HashMap<Integer,Integer> data=new HashMap<Integer,Integer>();
+  
+ public void getLogin() throws IOException{
+	 int x=1;
+	 do {
+		 try {
+			 data.put(988656, 9886);
+			 data.put(935301, 9353);
+			 
+		 }
+	 }
+ }
+ 
+}
